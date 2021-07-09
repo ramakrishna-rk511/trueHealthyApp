@@ -1,0 +1,239 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+*{
+	/*font-family: cursive;*/
+	/*font-family: 'Manrope', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+/*Font Size*/
+.fs8{
+	font-size: 8px !important;
+}
+.fs10{
+	font-size: 10px !important;
+}
+.fs12{
+	font-size: 12px !important;
+}
+.fs14{
+	font-size: 14px !important;
+}
+
+/*Font Weight*/
+.fb{
+	font-weight: bold !important;
+}
+
+/*font-color*/
+
+.fc1{
+	color: #ffffff !important;
+}
+.fc2{
+	color: #00b4a9;
+}
+.fc3{
+	color: #999999;
+}
+
+.bg1{
+	background-color: #00b4a9;
+}
+.bg2{
+	background-color: #ffffff;
+}
+.bg3{
+	background-color: #fcf8dd;
+}
+.bg4{
+	background-color: #d7f1ef;
+}
+.marg_auto{
+	margin: auto;
+}
+
+/*margin*/
+.marg0{
+	margin: 0px;
+}
+.marg_t10{
+	margin-top: 10px;
+}
+.marg_t0{
+	margin-top: 0px;
+}
+/*Padding*/
+.padd5{
+	padding: 5px;
+}
+.padd10{
+	padding: 10px;
+}
+.padd20{
+	padding: 20px;
+}
+.padd_t3{
+	padding-top: 3px;
+}
+.padd_t5{
+	padding-top: 5px;
+}
+.padd_l5{
+	padding-left: 5px;
+}
+.padd1010{
+	padding: 0px 10px;
+}
+.padd2020{
+	padding: 0px 20px;
+}
+.padd_l10{
+	padding-left: 10px;
+}
+.padd_r10{
+	padding-right: 10px;
+}
+.padd_b5{
+	padding-bottom: 5px;
+}
+
+/*Radius*/
+.br_radius3{
+	border-radius: 3px;
+}
+.br_radius5{
+	border-radius: 5px;
+}
+.br_radius50{
+	border-radius: 50%;
+}
+
+.box_shadow1{
+	box-shadow: 1px 1px 5px #dcdcdc
+}
+
+/*POSITONS*/
+/*Positions*/
+.pos_rel{
+	position: relative;
+}
+.pos_ab{
+	position: absolute;
+}
+.pos_t0{
+	top: 0px;
+}
+
+/*BORDER*/
+.br_1{
+	border: 1px solid #dcdcdc;
+}
+.br_2{
+	border: 1px solid #00b4a9;
+}
+.br_3{
+	border: 1px solid #f1f1f1;
+}
+.br_btm_1{
+	border-bottom: 1px solid #dcdcdc;
+}
+.add_money{
+	border: 1px solid #ffffff;
+	border-radius: 15px;
+    color: #fff;
+    background-color: #00b4a9;
+    padding: 8px;
+    font-size: 9px;
+}
+.scroll_bar ul{
+	overflow: scroll;
+	white-space: nowrap;
+	padding-left: 0px;
+	margin: 0px;
+}
+.scroll_bar ul li{
+	display: inline-grid;
+	padding: 10px;
+	width: 27%;
+	text-align: center;
+}
+.scroll_bar ul li p{
+	white-space: pre-wrap;	
+}
+.banner_slider{
+	overflow: scroll;
+	white-space: nowrap;
+}
+.home_search{
+	border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.scroll_bar1 ul{
+	overflow: scroll;
+	white-space: nowrap;
+	padding-left: 0px;
+	margin: 0px;
+}
+.scroll_bar1 ul li{
+	display: inline-grid;
+	padding: 10px;
+	width: 40%;
+	text-align: center;
+}
+.scroll_bar1 ul li p{
+	white-space: pre-wrap;	
+}
+.header-translucent-ios ion-toolbar {
+    --opacity: -0;
+}
+/*SEARCH PAGE CSS START*/
+.main_search{
+	border: none;
+    height: 30px;
+    width: 100%;
+}
+.search_list ul{
+	padding: 0px;
+}
+.search_list ul li{
+	display: inline-grid;
+	padding: 5px 10px;
+    background-color: #dcdcdc;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: 10px;
+}
+.cat_info{
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #dcdcdc;
+    background-color: #ffffff;
+}
+/*SEARCH PAGE CSS END*/

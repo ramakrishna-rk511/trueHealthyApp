@@ -1,0 +1,284 @@
+<ion-header [translucent]="true" class="bg1">
+  <ion-toolbar class="bg1">
+    <!-- <ion-buttons slot="start"> -->
+      <!-- <ion-menu-button></ion-menu-button> -->
+    <!-- </ion-buttons> -->
+    <!-- <ion-title>{{ folder }} fgd g</ion-title> -->
+    <ion-grid class="bg1">
+      <ion-row>
+        <ion-col size="3">
+          <!-- <div>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div> -->
+          <!-- <ion-buttons slot="start"> -->
+          <ion-menu-button class="fc1 fs14"></ion-menu-button>
+          <!-- </ion-buttons> -->
+        </ion-col>
+        <ion-col size="6" class="ion-no-padding ion-text-center">
+          <div>
+            <img src="./assets/img/logo.jpg" width="40%" />
+          </div>
+        </ion-col>
+        <ion-col size="3" class="ion-align-self-center">
+          <div>
+            <button class="add_money">+ Add Money</button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong class="capitalize">{{ folder }}</strong>
+    <p>1xplore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div> -->
+  <ion-grid class="bg1">
+    <ion-row>
+      <ion-col>
+        <div>
+          <p class="fc1 ion-no-margin fs10">Order by 11pm and get by 7am</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="bg1 padd10">
+    <ion-row class="home_search">
+      <ion-col size="2" class="ion-text-center ion-align-self-center">
+        <i class="fa fa-search fc2" aria-hidden="true"></i>
+      </ion-col>
+      <ion-col size="10" routerLink="./../../search">
+        <p class="fc3 fs10">Fruits, Bread, Atta & 1000+ items</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="scroll_bar">
+          <ul>
+            <li>
+              <img src="./assets/img/pro1.jpg" width="80%" class="br_radius50 marg_auto" />
+              <p class="marg0 padd_t5 fs10">View All</p>
+            </li>
+            <li>
+              <img src="./assets/img/pro2.jpg" width="80%" class="br_radius50 marg_auto" />
+              <p class="marg0 padd_t5 fs10">Milk</p>
+            </li>
+            <li>
+              <img src="./assets/img/pro3.jpg" width="80%" class="br_radius50 marg_auto" />
+              <p class="marg0 padd_t5 fs10">Dairy Products</p>
+            </li>
+            <li>
+              <img src="./assets/img/pro4.jpg" width="80%" class="br_radius50 marg_auto" />
+              <p class="marg0 padd_t5 fs10">Fresh Vegetables</p>
+            </li>
+            <li>
+              <img src="./assets/img/pro5.jpg" width="80%" class="br_radius50 marg_auto" />
+              <p class="marg0 padd_t5 fs10">Fresh Fruits</p>
+            </li>
+            <li>
+              <img src="./assets/img/pro6.jpg" width="80%" class="br_radius50 marg_auto" />
+              <p class="marg0 padd_t5 fs10">daily Needs</p>
+            </li>
+            <li>
+              <img src="./assets/img/pro7.jpg" width="80%" class="br_radius50 marg_auto" />
+              <p class="marg0 padd_t5 fs10">daily Needs</p>
+            </li>
+          </ul>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <h1>Slide 1</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 2</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides> -->
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <div>
+                    <h1 class="fs12 fb marg_t0">Featured</h1>
+                    <div class="banner_slider">
+                        <ion-col size="8">
+                            <img src="./assets/img/banner1.jpg" class="br_radius5" />
+                        </ion-col>
+                        <ion-col size="8">
+                            <img src="./assets/img/banner2.jpg" class="br_radius5" />
+                        </ion-col>
+                        <ion-col size="8">
+                            <img src="./assets/img/banner1.jpg" class="br_radius5" />
+                        </ion-col>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid class="ion-no-padding">
+        <ion-row>
+            <ion-col>
+                <div class="bg3 padd10">
+                    <h1 class="fs12 fb marg_t0">Exclusive Offer For You</h1>
+                    <img src="./assets/img/banner3.jpg" width="100%" class="br_radius5" />
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid class="ion-no-padding">
+        <ion-row>
+            <ion-col class="padd10">
+                <img src="./assets/img/banner4.jpg" width="100%" class="br_radius5" />
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="4">
+                <img src="./assets/img/cat1.jpg" width="100%" class="br_radius5" />
+                <p>Milk</p>
+            </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/cat2.jpg" width="100%" class="br_radius5" />
+        <p>Milk</p>
+      </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/cat3.jpg" width="100%" class="br_radius5" />
+        <p>Milk</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <img src="./assets/img/cat4.jpg" width="100%" class="br_radius5" />
+        <p>Milk</p>
+      </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/cat5.jpg" width="100%" class="br_radius5" />
+        <p>Milk</p>
+      </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/cat6.jpg" width="100%" class="br_radius5" />
+        <p>Milk</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <img src="./assets/img/cat7.jpg" width="100%" class="br_radius5" />
+        <p>Milk</p>
+      </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/cat8.jpg" width="100%" class="br_radius5" />
+        <p>Milk</p>
+      </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/cat9.jpg" width="100%" class="br_radius5" />
+        <p>Milk</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <h1 class="marg0">Best sellers</h1>
+      </ion-col>
+      <ion-col size="6">
+        <a href="" class="fc2">See all </a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="scroll_bar1">
+          <ul>
+            <li> 
+              <img src="./assets/img/milk1.jpg" width="75%" class="br_radius50" />
+              <p>Heritage - Toned Milk (500ml)</p>
+              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+              <button class="add_btn">ADD</button>
+            </li>
+            <li> 
+              <img src="./assets/img/milk2.jpg" width="75%" class="br_radius50" />
+              <p>Amul - Gold Milk (500ml)</p>
+              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+              <button class="add_btn">ADD</button>
+            </li>
+            <li> 
+              <img src="./assets/img/milk3.jpg" width="75%" class="br_radius50" />
+              <p>dfdsf</p>
+              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+              <button class="add_btn">ADD</button>
+            </li>
+            <li> 
+              <img src="./assets/img/milk1.jpg" width="75%" class="br_radius50" />
+              <p>dfdsf</p>
+              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+              <button class="add_btn">ADD</button>
+            </li>
+            <li> 
+              <img src="./assets/img/milk2.jpg" width="75%" class="br_radius50" />
+              <p>dfdsf</p>
+              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+              <button class="add_btn">ADD</button>
+            </li>
+            <li> 
+              <img src="./assets/img/milk3.jpg" width="75%" class="br_radius50" />
+              <p>dfdsf</p>
+              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+              <button class="add_btn">ADD</button>
+            </li>
+          </ul>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="./assets/img/banner5.jpg" width="100%" class="br_radius5" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>Freshly Stocked</h1>
+        <p>Buy fresh daily, eat fresh daily</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <img src="./assets/img/sub_cat1.jpg" width="100%" class="br_radius5" />
+      </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/sub_cat2.jpg" width="100%" class="br_radius5" />
+      </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/sub_cat3.jpg" width="100%" class="br_radius5" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <img src="./assets/img/sub_cat4.jpg" width="100%" class="br_radius5" />
+      </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/sub_cat5.jpg" width="100%" class="br_radius5" />
+      </ion-col>
+      <ion-col size="4">
+        <img src="./assets/img/sub_cat6.jpg" width="100%" class="br_radius5" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
