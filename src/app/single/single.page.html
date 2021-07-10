@@ -1,16 +1,15 @@
-<ion-header>
+<ion-header class="br_btm_1">
   	<ion-toolbar>
     <!-- <ion-title>ListPage</ion-title> -->
 	    <ion-grid>
 	    	<ion-row>
-	    		<ion-col size="2" routerLink="/">
+	    		<ion-col size="1" routerLink="/" class="ion-align-self-center fs14 fb" >
 	    			<ion-icon name="chevron-back-outline"></ion-icon>
 	    		</ion-col>
-	    		<ion-col size="8">
-	    			<h1 class="marg0">Apple (1Kg)</h1>
-					<p class="marg0">66 products</p>
+	    		<ion-col size="10">
+	    			<h1 class="marg0 fs10 fb">Apple (1Kg)</h1>
 	    		</ion-col>
-	    		<ion-col size="2">
+	    		<ion-col size="1" class="ion-align-self-center fs14 fb">
 	    			<ion-icon name="search-outline"></ion-icon>
 	    		</ion-col>
 	    	</ion-row>
@@ -21,27 +20,55 @@
 <ion-content>
 	<ion-grid>
 		<ion-row>
-			<ion-col>
-				<img src="./assets/img/apple500X500.jpg" width="75%" />
+			<ion-col class="ion-text-center">
+				<!-- <img src="./assets/img/apple500X500.jpg" width="75%" /> -->
+				<ion-slides pager="true" [options]="slideOpts">
+			      	<ion-slide>
+			        	<img src="./assets/img/apple500X500.jpg" width="75%">
+			      	</ion-slide>
+			      	<ion-slide>
+			        	<img src="./assets/img/apple500X500.jpg" width="75%">
+			      	</ion-slide>
+			      	<ion-slide>
+			        	<img src="./assets/img/apple500X500.jpg" width="75%">
+			      	</ion-slide>
+			    </ion-slides>
 			</ion-col>
 		</ion-row>
 		<ion-row>
 			<ion-col>
-				<h1 class="marg0">Appple (1 KG)</h1>
-				<h1><i class="fa fa-inr" aria-hidden="true"></i>139.00 <del class="fs10 fc3"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del> </h1>
-				<h1 class="fc2">Delivery on wed 30 Jun</h1>
+				<h1 class="marg0 fs10 fb">Appple (1 KG)</h1>
+				<p class="fs8 fc3">500ml</p>
+				<h1 class="fs10 fb marg0"><i class="fa fa-inr" aria-hidden="true"></i>139.00 <del class="fs8 fc3"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del> </h1>
+				<p class="fc2 fs8">Delivery on wed 30 Jun</p>
+				<button class="List_add_btn fs8 marg_r10"># SUBSCRIBE</button>
+				<button class="List_add_btn fs8 bg4">+ ADD</button>
 			</ion-col>
 		</ion-row>
 		<ion-row>
 			<ion-col>
-				<h1 class="br_btm_1">Product Information</h1>
-				<p>Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit.</p>
+				<h1 class="br_btm_1 fs10 fb padd_b5">Product Information</h1>
+				<p class="fs10">Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit.</p>
 			</ion-col>
 		</ion-row>
 		<ion-row>
 			<ion-col>
-				<h1 class="br_btm_1">Disclaimer</h1>
-				<p>Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit.</p>
+				<h1 class="br_btm_1 fs10 fb padd_b5">Disclaimer</h1>
+				<p class="fs10">Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit. Lorem ipsum dolor smit.</p>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-grid class="single_proceed">
+		<ion-row class="bg1 fc1 br_radius5">
+			<ion-col size="2" class="ion-text-center ion-align-self-center fs22">
+				<ion-icon name="cart-outline"></ion-icon>
+			</ion-col>
+			<ion-col class="ion-align-self-center">
+				<p class="marg0 fs10 padd_b5">3 Items</p>
+				<p class="marg0 fs10"><i class="fa fa-inr" aria-hidden="true"></i> 139.00</p>
+			</ion-col>
+			<ion-col class="ion-text-right">
+				<p class="fs10">Proceed to cart <ion-icon name="chevron-forward-outline"></ion-icon></p>
 			</ion-col>
 		</ion-row>
 	</ion-grid>

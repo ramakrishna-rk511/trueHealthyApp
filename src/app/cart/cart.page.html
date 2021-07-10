@@ -1,13 +1,13 @@
-<ion-header>
+<ion-header class="br_btm_1">
   	<ion-toolbar>
     <!-- <ion-title>ListPage</ion-title> -->
 	    <ion-grid>
 	    	<ion-row>
-	    		<ion-col size="2" routerLink="/">
-	    			<ion-icon name="chevron-back-outline"></ion-icon>
-	    		</ion-col>
+	    		<ion-col size="1" routerLink="/" class="ion-align-self-center fs14 fb">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </ion-col>
 	    		<ion-col size="10">
-	    			<h1 class="marg0">Cart (1 Item)</h1>
+	    			<h1 class="fs10 fb marg0">Cart (1 Item)</h1>
 	    		</ion-col>
 	    	</ion-row>
 	    </ion-grid>
@@ -15,38 +15,58 @@
 </ion-header>
 
 <ion-content>
-	<ion-gri>
+	<ion-grid>
 		<ion-row>
-			<ion-col>
-				<p>Add <i class="fa fa-inr" aria-hidden="true"></i> 60 more and get</p>
-				<p>a <span class="fc2 fb">FREE</span> item</p>
+			<ion-col class="ion-text-center">
+				<p class="fs10">Add <i class="fa fa-inr" aria-hidden="true"></i> 60 more and get</p>
+				<p class="fs10">a <span class="fc2 fb">FREE</span> item</p>
 			</ion-col>
 		</ion-row>
+    </ion-grid>
+    <ion-grid>
 		<ion-row>
 			<ion-col>
 				<img src="./assets/img/banner.jpg" width="100%" height="150px" class="br_radius5">
 			</ion-col>
 		</ion-row>
-	</ion-gri>
-	<ion-grid>
+	</ion-grid>
+    <ion-grid class="bg4 marg_b5">
+        <ion-row>
+            <ion-col size="1">
+                <ion-icon name="bus-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="11">
+                <h1 class="marg0 fs8 fb">You have 5 FREE deliveries remaining!</h1>
+                <p class="marg0 fs8 padd_t5">Your first 5 grocery deliveries on the p;atform are free. Use before the offer ends. T&Cs apply</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+	<ion-grid class="bg4">
 		<ion-row>
 			<ion-col size="2">
-				<h1>30</h1>
-				<p>Jun</p>
+				<h1 class="fs12 fb marg0 padd_t5">30</h1>
+				<p class="fs10 marg0">Jun</p>
 			</ion-col>
 			<ion-col size="10">
-				<h1>Tomorrow</h1>
-				<p>Nothing scheduled on this day yet</p>
+				<h1 class="fs12 fb marg0 padd_t5">Tomorrow <span class="fs10">(sat)</span></h1>
+				<p class="fs8 marg0">Nothing scheduled on this day yet</p>
 			</ion-col>
 		</ion-row>
 	</ion-grid>
-	<ion-grid>
-		<ion-row>
-			<ion-col size="5">
-				<p>Scedule for a future date</p>
-			</ion-col>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="5">
+                <p class="delivery_icon"><img src="./assets/img/delivery_icon.jpg" width="20%" alt="Delivery Icon" /><span class="fs10">ARRIVING BY 7PM</span></p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+	<ion-grid class="br_1 br_radius5 marg5">
+		<ion-row class="br_btm_1">
 			<ion-col size="7">
-				<p class="fc2">CHANGE DATE <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+				<p class="fs8 padd_b5 marg0">Scedule for a future date</p>
+			</ion-col>
+			<ion-col size="5" class="ion-text-right">
+				<p class="fc2 fs8 padd_b5 marg0">CHANGE DATE <i class="fa fa-angle-right" aria-hidden="true"></i></p>
 			</ion-col>
 		</ion-row>
 		<ion-row>
@@ -54,101 +74,207 @@
 				<img src="./assets/img/apple500X500.jpg" width="100%" />
 			</ion-col>
 			<ion-col size="7">
-				<h1>Apple </h1>
-				<p>1 Pkt</p>
-				<h1><i class="fa fa-inr" aria-hidden="true"></i>139.00 <del class="fs10 fc3"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del> </h1>
+				<h1 class="fs10 fb marg0">Apple (250gm)</h1>
+				<p class="fs8">1 Pkt</p>
+				<h1 class="fs10 marg0"><i class="fa fa-inr" aria-hidden="true"></i><span class="fb fs10"> 139.00</span> <del class="fs10 fc3"> <i class="fa fa-inr" aria-hidden="true"></i> 159.00</del> </h1>
 			</ion-col>
+            <ion-col size="3">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col class="ion-text-right">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row class="br_2 br_radius15">
+                        <ion-col size="3" class="ion-align-self-center ion-text-center fs18 fc2 ion-no-padding">
+                            -
+                        </ion-col>
+                        <ion-col size="6">
+                            <input type="number" value="1" class="add_item ion-text-center">
+                        </ion-col>
+                        <ion-col size="3" class="ion-align-self-center fs18 fc2 ion-no-padding">
+                            +
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-col>
 		</ion-row>
+        <ion-row class="br_top_1">
+            <ion-col size="7">
+                <p class="fs8 padd_t5 marg0 fc3">FIFTYOFF code applicable</p>
+            </ion-col>
+            <ion-col size="5" class="ion-text-right">
+                <p class="fc2 fs8 padd_t5 marg0">SUBSCRIBE <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </ion-col>
+        </ion-row>
 	</ion-grid>
-	<ion-grid>
-    <ion-row>
-      <ion-col size="6">
-        <h1 class="marg0">Best sellers</h1>
-      </ion-col>
-      <ion-col size="6">
-        <a href="" class="fc2">See all </a>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-	<ion-grid>
-    	<ion-row>
-      		<ion-col>
-        		<div class="scroll_bar1">
-          			<ul>
-            			<li> 
-              				<img src="./assets/img/milk1.jpg" width="75%" class="br_radius50" />
-              				<p>Heritage - Toned Milk (500ml)</p>
-              				<p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
-              				<button class="add_btn">ADD</button>
-            			</li>
-            		<li> 
-              <img src="./assets/img/milk2.jpg" width="75%" class="br_radius50" />
-              <p>Amul - Gold Milk (500ml)</p>
-              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
-              <button class="add_btn">ADD</button>
-            </li>
-            <li> 
-              <img src="./assets/img/milk3.jpg" width="75%" class="br_radius50" />
-              <p>dfdsf</p>
-              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
-              <button class="add_btn">ADD</button>
-            </li>
-            <li> 
-              <img src="./assets/img/milk1.jpg" width="75%" class="br_radius50" />
-              <p>dfdsf</p>
-              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
-              <button class="add_btn">ADD</button>
-            </li>
-            <li> 
-              <img src="./assets/img/milk2.jpg" width="75%" class="br_radius50" />
-              <p>dfdsf</p>
-              <p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
-              <button class="add_btn">ADD</button>
-            </li>
-            			<li> 
-              				<img src="./assets/img/milk3.jpg" width="75%" class="br_radius50" />
-              				<p>dfdsf</p>
-              				<p class="marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
-              				<button class="add_btn">ADD</button>
-            			</li>
-          			</ul>
-        		</div>
-      		</ion-col>
-    	</ion-row>
-  	</ion-grid>
-	<ion-grid>
+    <ion-grid class="bg4">
+        <ion-row>
+            <ion-col size="1" class="ion-align-self-center">
+                <ion-icon name="refresh-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="11">
+                <h1 class="fs12 fb marg0 padd_t5">Subscriptions</h1>
+                <p class="fs8 marg0">Get your groceries on auto-pilot with subscriptions</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid class="br_1 br_radius5 marg5">
+        <ion-row class="br_btm_1">
+            <ion-col size="7">
+                <p class="fs8 padd_b5 marg0">Starting on 10 jul</p>
+            </ion-col>
+            <ion-col size="5" class="ion-text-right">
+                <p class="fc2 fs8 padd_b5 marg0">EDIT SETTINGS <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="2">
+                <img src="./assets/img/apple500X500.jpg" width="100%" />
+            </ion-col>
+            <ion-col size="7">
+                <h1 class="fs12 fb marg0">Apple </h1>
+                <p class="fs10">1 Pkt, Daily</p>
+                <h1 class="fs10 marg0"><i class="fa fa-inr" aria-hidden="true"></i><span class="fb"> 139.00</span> <del class="fs10 fc3"> <i class="fa fa-inr" aria-hidden="true"></i> 159.00</del> </h1>
+            </ion-col>
+            <ion-col size="3">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col class="ion-text-right">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                    <!-- <ion-row class="br_2 br_radius15">
+                        <ion-col size="3" class="ion-align-self-center ion-text-center fs18 fc2 ion-no-padding">
+                            -
+                        </ion-col>
+                        <ion-col size="6">
+                            <input type="number" value="1" class="add_item ion-text-center">
+                        </ion-col>
+                        <ion-col size="3" class="ion-align-self-center fs18 fc2 ion-no-padding">
+                            +
+                        </ion-col>
+                    </ion-row> -->
+                    <ion-row>
+                        <ion-col class="ion-text-right">
+                            <p class="fs10 marg0">6 Pkt</p>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    
+	<ion-grid class="bg3">
+        <ion-row>
+            <ion-col size="6">
+                <h1 class="marg0 fs12 fb">Popular Favourites</h1>
+            </ion-col>
+            <ion-col size="6" class="ion-text-right">
+                <a href="" class="fc2">See all </a>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <div class="scroll_bar1">
+                    <ul>
+                        <li> 
+                            <img src="./assets/img/milk1.jpg" width="75%" class="br_radius50" />
+                            <p class="fs10">Heritage - Toned Milk (500ml)</p>
+                            <p class="fs10 marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+                            <button class="add_btn">ADD</button>
+                        </li>
+                        <li> 
+                            <img src="./assets/img/milk2.jpg" width="75%" class="br_radius50" />
+                            <p class="fs10">Amul - Gold Milk (500ml)</p>
+                            <p class="fs10 marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+                            <button class="add_btn">ADD</button>
+                        </li>
+                        <li> 
+                            <img src="./assets/img/milk3.jpg" width="75%" class="br_radius50" />
+                            <p class="fs10">Amul - Gold Milk (500ml)</p>
+                            <p class="fs10 marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+                            <button class="add_btn">ADD</button>
+                        </li>
+                        <li> 
+                            <img src="./assets/img/milk1.jpg" width="75%" class="br_radius50" />
+                            <p class="fs10">Amul - Gold Milk (500ml)</p>
+                            <p class="fs10 marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+                            <button class="add_btn">ADD</button>
+                        </li>
+                        <li> 
+                            <img src="./assets/img/milk2.jpg" width="75%" class="br_radius50" />
+                            <p class="fs10">Amul - Gold Milk (500ml)</p>
+                            <p class="fs10 marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+                            <button class="add_btn">ADD</button>
+                        </li>
+                        <li> 
+                            <img src="./assets/img/milk3.jpg" width="75%" class="br_radius50" />
+                            <p class="fs10">Amul - Gold Milk (500ml)</p>
+                            <p class="fs10 marg0"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+                            <button class="add_btn">ADD</button>
+                        </li>
+                    </ul>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+	<ion-grid class="bg4">
   		<ion-row>
-  			<ion-col size="1">
-  				<p><i class="fa fa-money" aria-hidden="true"></i></p>
+  			<ion-col size="2" class="ion-text-center">
+  				<p class="marg0"><i class="fa fa-money" aria-hidden="true"></i></p>
   			</ion-col>
-  			<ion-col size="11">
-  				<h1>Payment</h1>
-				<p>Review payment details before placing your order</p>
+  			<ion-col size="10">
+  				<h1 class="fs12 fb marg0">Payment</h1>
+				<p class="marg0 fs10">Review payment details before placing your order</p>
   			</ion-col>
   		</ion-row>
   	</ion-grid>
-  	<ion-grid>
+  	<ion-grid >
   		<ion-row>
   			<ion-col size="5">
-  				<p>Cart amount</p>
-				<p>Service fee</p>
-				<p>Total amount</p>
+  				<p class="fs10">Cart amount</p>
+				<p class="fs10">Service fee</p>
+				<p class="fs10">Total amount</p>
   			</ion-col>
-  			<ion-col size="7">
-  				<p><i class="fa fa-inr" aria-hidden="true"></i> 139.00</p>
-				<p><del class="fs10 fc3"><i class="fa fa-inr" aria-hidden="true"></i> 59.00</del></p>
-				<p><i class="fa fa-inr" aria-hidden="true"></i>139.00</p>
-  			</ion-col>
-  		</ion-row>
-  	</ion-grid>
-  	<ion-grid>
-  		<ion-row>
-  			<ion-col size="5">
-  				<p>Amount to pay</p>
-  			</ion-col>
-  			<ion-col size="7">
-  				<p><i class="fa fa-inr" aria-hidden="true"></i> 139.00</p>
+  			<ion-col size="7" class="ion-text-right">
+  				<p class="fs10"><i class="fa fa-inr" aria-hidden="true"></i> 139.00</p>
+                <p class="fs10"><i class="fa fa-inr" aria-hidden="true"></i> 59.00</p>
+                <p class="fs10"><i class="fa fa-inr" aria-hidden="true"></i>139.00</p>
   			</ion-col>
   		</ion-row>
   	</ion-grid>
+    <ion-grid class="marg_b100">
+        <ion-row class="bg4 br_2 padd5 br_radius5">
+            <ion-col size="2" class="ion-text-right ion-align-self-center">
+                <ion-icon name="flower-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="7">
+                <h1 class="marg0 fs8 fb padd_b5">Apply coupon</h1>
+                <p class="marg0 fs8 fc2">View all Offers ></p>
+            </ion-col>
+            <ion-col size="3" class="ion-text-center ion-align-self-center">
+                <p class="marg0 fs8 fc2">Apply ></p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid class="single_proceed bg2 bx_1"> 
+        <ion-row class="bg4">
+            <ion-col size="2" class="ion-text-right ion-align-self-center">
+                <ion-icon name="star-half-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="10">
+                <p class="fs8">FIFTYOFF : Get 50% off on your first offer.. Use Code FIFTYOFF</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="7">
+                <p class="fs10 marg0">Grand Total</p>
+                <p class="fs10 marg0 fb"><i class="fa fa-inr" aria-hidden="true"></i> 75.00</p>
+            </ion-col>
+            <ion-col size="5" class="ion-text-right">
+                <button class="bg1 fc1 padd10 br_radius5 fs10 w100">PROCEED</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

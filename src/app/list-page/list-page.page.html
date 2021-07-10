@@ -1,16 +1,16 @@
-<ion-header>
-  	<ion-toolbar>
+<ion-header class="bg4">
+  	<ion-toolbar class="bg4">
     <!-- <ion-title>ListPage</ion-title> -->
-	    <ion-grid>
+	    <ion-grid class="bg4">
 	    	<ion-row>
-	    		<ion-col size="2">
+	    		<ion-col size="1" routerLink="/" class="ion-align-self-center fs14 fb">
 	    			<ion-icon name="chevron-back-outline"></ion-icon>
 	    		</ion-col>
-	    		<ion-col size="8">
-	    			<h1 class="marg0">Fresh Vegetables</h1>
-					<p class="marg0">66 products</p>
+	    		<ion-col size="10">
+	    			<h1 class="marg0 fs12 fb">Fresh Vegetables</h1>
+					<p class="marg0 fs10">66 products</p>
 	    		</ion-col>
-	    		<ion-col size="2">
+	    		<ion-col size="1" routerLink="./../search" class="ion-align-self-center fs14 fb">
 	    			<ion-icon name="search-outline"></ion-icon>
 	    		</ion-col>
 	    	</ion-row>
@@ -18,36 +18,58 @@
   	</ion-toolbar>
 </ion-header>
 
-<ion-content>
-	<ion-grid>
+<ion-content>		
+    <ion-grid class="bg4">
 		<ion-row>
-			<ion-col size="6">
-				<p>Filter By</p>
+			<ion-col size="6" class="ion-text-right">
+				<p class="marg0 padd5">Filter By</p>
 			</ion-col>
 			<ion-col size="6">
-				<button>Category</button>
+				<button class="filter_btn">Category</button>
 			</ion-col>
 		</ion-row>
-	</ion-grid>	
-	<ion-grid>
+	</ion-grid>
+	<ion-grid class="bg4">
 		<ion-row>
 			<ion-col size="6">
-				<ion-row>
-					<ion-col size="4">
-						<img src="img/list_icon1.jpg" width="75%">
+				<ion-row class="bg2 br_radius3">
+					<ion-col size="3">
+						<img src="./assets/img/list_icon1.jpg" width="75%">
 					</ion-col>
-					<ion-col size="8">
-						<h1 class="fs8">Newly Launched</h1>
+					<ion-col size="9" class="ion-align-self-center">
+						<h1 class="fs10 marg0">Newly Launched</h1>
 					</ion-col>
 				</ion-row>
 			</ion-col>
 			<ion-col size="6">
-				<ion-row>
-					<ion-col size="4">
-						<img src="img/list_icon1.jpg" width="75%">
+				<ion-row class="bg2 br_radius3">
+					<ion-col size="3">
+						<img src="./assets/img/list_icon3.jpg" width="75%">
 					</ion-col>
-					<ion-col size="8">
-						<h1 class="fs8">Newly Launched</h1>
+					<ion-col size="9" class="ion-align-self-center">
+						<h1 class="fs10 marg0">Vegetabels</h1>
+					</ion-col>
+				</ion-row>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col size="6">
+				<ion-row class="bg2 br_radius3">
+					<ion-col size="3">
+						<img src="./assets/img/list_icon2.jpg" width="75%">
+					</ion-col>
+					<ion-col size="9" class="ion-align-self-center">
+						<h1 class="fs10 marg0">Leafy Vegetabels</h1>
+					</ion-col>
+				</ion-row>
+			</ion-col>
+			<ion-col size="6">
+				<ion-row class="bg2 br_radius3">
+					<ion-col size="3">
+						<img src="./assets/img/list_icon4.jpg" width="75%">
+					</ion-col>
+					<ion-col size="9" class="ion-align-self-center">
+						<h1 class="fs10 marg0">Fruits</h1>
 					</ion-col>
 				</ion-row>
 			</ion-col>
@@ -56,62 +78,66 @@
 	<ion-grid>
 		<ion-row>
 			<ion-col>
-				<h1>Keep yourself hydrated!</h1>
+				<h1 class="fs12 fb">Keep yourself hydrated!</h1>
 				<img src="./assets/img/banner6.jpg" width="100%" class="br_radius5">
 			</ion-col>
 		</ion-row>
 		<ion-row>
 			<ion-col>
-				<h1>Newly Launched</h1>
+				<h1 class="fs12 fb marg0">Newly Launched</h1>
 			</ion-col>
 		</ion-row>
-		<ion-row>
-			<ion-col size="4">
+		<ion-row class="br_3 marg_t5">
+			<ion-col size="3" class="ion-align-self-center">
 				<img src="./assets/img/tamarind.jpg" width="75%">
 			</ion-col>
-			<ion-col size="8">
-				<h1 class="fs12">Tamarind Sweet (225gm)</h1>
-				<h1 class="fs10"><i class="fa fa-inr" aria-hidden="true"></i>139.00 <del class="fc3"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del></h1>
-				<button class="List_add_btn">ADD</button>
-				<h1 class="fc2 fs10">Delivery on wed 30 Jun</h1>
+			<ion-col size="9">
+				<h1 class="fs10 fb marg0 padd_t5">Tamarind Sweet (225gm)</h1>
+				<h1 class="fs10 marg0 padd_t5"><i class="fa fa-inr" aria-hidden="true"></i> <span class="fb fs10"> 139.00</span> <del class="fc3 fs10"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del></h1>
+				<button class="List_add_btn fs8 marg_r10"># SUBSCRIBE</button>
+				<button class="List_add_btn fs8 bg4">ADD</button>
+				<h1 class="fc2 fs8 marg0 padd_t5">Delivery on wed 30 Jun</h1>
 			</ion-col>
 		</ion-row>
-		<ion-row>
-			<ion-col size="4">
+		<ion-row class="br_3 marg_t5">
+			<ion-col size="3" class="ion-align-self-center">
 				<img src="./assets/img/tamarind.jpg" width="75%">
 			</ion-col>
-			<ion-col size="8">
-				<h1 class="fs12">Tamarind Sweet (225gm)</h1>
-				<h1 class="fs10"><i class="fa fa-inr" aria-hidden="true"></i>139.00 <del class="fc3"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del></h1>
-				<button class="List_add_btn">ADD</button>
-				<h1 class="fc2 fs10">Delivery on wed 30 Jun</h1>
+			<ion-col size="9">
+				<h1 class="fs10 fb marg0 padd_t5">Tamarind Sweet (225gm)</h1>
+				<h1 class="fs10 marg0 padd_t5"><i class="fa fa-inr" aria-hidden="true"></i> <span class="fb fs10"> 139.00</span> <del class="fc3 fs10"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del></h1>
+				<button class="List_add_btn fs8 marg_r10"># SUBSCRIBE</button>
+				<button class="List_add_btn fs8 bg4">ADD</button>
+				<h1 class="fc2 fs8 marg0 padd_t5">Delivery on wed 30 Jun</h1>
 			</ion-col>
 		</ion-row>
-		<ion-row>
+		<ion-row class="marg_t5">
 			<ion-col>
-				<h1>Vegetables</h1>
+				<h1 class="fs12 fb marg0">Vegetables</h1>
 			</ion-col>
 		</ion-row>
-		<ion-row>
-			<ion-col size="4">
+		<ion-row class="br_3 marg_t5">
+			<ion-col size="3" class="ion-align-self-center">
 				<img src="./assets/img/tamarind.jpg" width="75%">
 			</ion-col>
-			<ion-col size="8">
-				<h1 class="fs12">Tamarind Sweet (225gm)</h1>
-				<h1 class="fs10"><i class="fa fa-inr" aria-hidden="true"></i>139.00 <del class="fc3"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del></h1>
-				<button class="List_add_btn">ADD</button>
-				<h1 class="fc2 fs10">Delivery on wed 30 Jun</h1>
+			<ion-col size="9">
+				<h1 class="fs10 fb marg0 padd_t5">Tamarind Sweet (225gm)</h1>
+				<h1 class="fs10 marg0 padd_t5"><i class="fa fa-inr" aria-hidden="true"></i> <span class="fb fs10"> 139.00</span> <del class="fc3 fs10"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del></h1>
+				<button class="List_add_btn fs8 marg_r10"># SUBSCRIBE</button>
+				<button class="List_add_btn fs8 bg4">ADD</button>
+				<h1 class="fc2 fs8 marg0 padd_t5">Delivery on wed 30 Jun</h1>
 			</ion-col>
 		</ion-row>
-		<ion-row>
-			<ion-col size="4">
+		<ion-row class="br_3 marg_t5">
+			<ion-col size="3" class="ion-align-self-center">
 				<img src="./assets/img/tamarind.jpg" width="75%">
 			</ion-col>
-			<ion-col size="8">
-				<h1 class="fs12">Tamarind Sweet (225gm)</h1>
-				<h1 class="fs10"><i class="fa fa-inr" aria-hidden="true"></i>139.00 <del class="fc3"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del></h1>
-				<button class="List_add_btn">ADD</button>
-				<h1 class="fc2 fs10">Delivery on wed 30 Jun</h1>
+			<ion-col size="9">
+				<h1 class="fs10 fb marg0 padd_t5">Tamarind Sweet (225gm)</h1>
+				<h1 class="fs10 marg0 padd_t5"><i class="fa fa-inr" aria-hidden="true"></i> <span class="fb fs10"> 139.00</span> <del class="fc3 fs10"><i class="fa fa-inr" aria-hidden="true"></i> 159.00</del></h1>
+				<button class="List_add_btn fs8 marg_r10"># SUBSCRIBE</button>
+				<button class="List_add_btn fs8 bg4">ADD</button>
+				<h1 class="fc2 fs8 marg0 padd_t5">Delivery on wed 30 Jun</h1>
 			</ion-col>
 		</ion-row>
 	</ion-grid>

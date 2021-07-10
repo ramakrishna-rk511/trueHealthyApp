@@ -44,6 +44,15 @@
 .fs14{
 	font-size: 14px !important;
 }
+.fs18{
+	font-size: 18px !important;
+}
+.fs22{
+	font-size: 22px !important;
+}
+.fs50{
+	font-size: 50px !important;
+}
 
 /*Font Weight*/
 .fb{
@@ -66,21 +75,31 @@
 	background-color: #00b4a9;
 }
 .bg2{
-	background-color: #ffffff;
+	background-color: #ffffff !important;
 }
 .bg3{
 	background-color: #fcf8dd;
 }
 .bg4{
-	background-color: #d7f1ef;
+	background-color: #d7f1ef !important;
 }
+
+
+/*margin*/
 .marg_auto{
 	margin: auto;
 }
-
-/*margin*/
 .marg0{
 	margin: 0px;
+}
+.marg_b100{
+	margin-bottom: 100px;
+}
+.marg5{
+	margin: 5px;
+}
+.marg_t5{
+	margin-top: 5px;
 }
 .marg_t10{
 	margin-top: 10px;
@@ -88,7 +107,17 @@
 .marg_t0{
 	margin-top: 0px;
 }
+.marg_r10{
+	margin-right: 10px;
+}
+.marg_b5{
+	margin-bottom: 5px;
+}
+
 /*Padding*/
+.padd3{
+	padding: 3px;
+}
 .padd5{
 	padding: 5px;
 }
@@ -130,12 +159,18 @@
 .br_radius5{
 	border-radius: 5px;
 }
+.br_radius15{
+	border-radius: 15px;
+}
 .br_radius50{
 	border-radius: 50%;
 }
 
 .box_shadow1{
 	box-shadow: 1px 1px 5px #dcdcdc
+}
+.bx_1{
+	box-shadow: 0px 0px 5px #dcdcdc;
 }
 
 /*POSITONS*/
@@ -163,6 +198,18 @@
 .br_btm_1{
 	border-bottom: 1px solid #dcdcdc;
 }
+.br_top_1{
+	border-top: 1px solid #dcdcdc;
+}
+
+/*WIDTH*/
+.w100{
+	width: 100%;
+}
+.dis_blk{
+	display: block;
+}
+
 .add_money{
 	border: 1px solid #ffffff;
 	border-radius: 15px;
@@ -171,6 +218,8 @@
     padding: 8px;
     font-size: 9px;
 }
+
+/*HOME PAGE CSS START*/
 .scroll_bar ul{
 	overflow: scroll;
 	white-space: nowrap;
@@ -189,6 +238,14 @@
 .banner_slider{
 	overflow: scroll;
 	white-space: nowrap;
+}
+.add_btn{
+    background-color: #00b4a9;
+    border: none;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 25px;
+    margin-top: 5px;
 }
 .home_search{
 	border: 1px solid #ffffff;
@@ -213,6 +270,32 @@
 .header-translucent-ios ion-toolbar {
     --opacity: -0;
 }
+.button-inner{
+	justify-content: flex-start !important;
+}
+/*HOME PAGE CSS END*/
+
+/*LIST PAGE CSS START*/
+.filter_btn{
+	padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5e5e5e;
+    color: #ffffff;
+}
+.List_add_btn{
+	border:1px solid  #00b4a9;
+    padding: 5px;
+    color: #00b4a9;
+    border-radius: 25px;
+    margin-top: 5px;
+    width: 26%;
+    background-color: #ffffff;
+}
+.header-ios ion-toolbar:last-of-type {
+    --border-width: 0px;
+}
+/*LIST PAGE CSS END*/
 /*SEARCH PAGE CSS START*/
 .main_search{
 	border: none;
@@ -237,3 +320,63 @@
     background-color: #ffffff;
 }
 /*SEARCH PAGE CSS END*/
+
+/*CART PAGE CSS START*/
+
+.delivery_icon{
+    display: inline-block;
+    border: 1px solid #00b4a9;
+    padding: 0px 10px 10px 10px;
+    border-radius: 20px;
+    margin-left: -10px;
+    box-shadow: 1px 1px 1px #dcdcdc;
+}
+.add_item{
+	width: 100%;
+	padding: 0px;
+	border: none;
+}
+
+/*CART PAGE CSS END*/
+
+/*SINGLE PAGE CSS START*/
+.single_proceed{
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+/*SINGLE PAGE CSS END*/
+/*SUBSCRIPTIONS PAGE CSS START*/
+.dates_repeat{
+	padding: 0px;
+}
+.dates_repeat li{
+	display: inline-block;
+    background-color: #d7f1ef;
+    padding: 6px 9px 5px 8px;
+    border-radius: 19px;
+    width: 9%;
+    height: 25px;
+    text-align: center;
+    font-size: 10px;
+    margin: 5px;
+}
+/*SUBSCRIPTION PAGE CSS END*/
+
+.log_inp{
+	width: 100%;
+    box-shadow: none;
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px;
+    color: #00b4a9;
+    border: 1px solid #dcdcdc;
+}
+.log_btn{
+	width: 100%;
+	color: #ffffff;
+	background-color: #00b4a9;
+	padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
