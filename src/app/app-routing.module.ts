@@ -50,6 +50,34 @@ const routes: Routes = [
   {
     path: 'truehealthyaccess',
     loadChildren: () => import('./truehealthyaccess/truehealthyaccess.module').then( m => m.TruehealthyaccessPageModule)
+  },
+  {
+    path: 'orders',
+    loadChildren: () => import('./orders/orders.module').then( m => m.OrdersPageModule)
+  },
+  {
+    path: 'wallet-history',
+    loadChildren: () => import('./wallet-history/wallet-history.module').then( m => m.WalletHistoryPageModule)
+  },
+  {
+    path: 'mysubscriptionlist',
+    loadChildren: () => import('./mysubscriptionlist/mysubscriptionlist.module').then( m => m.MysubscriptionlistPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'changepassword',
+    loadChildren: () => import('./changepassword/changepassword.module').then( m => m.ChangepasswordPageModule)
+  },
+  {
+    path: 'addressedit',
+    loadChildren: () => import('./addressedit/addressedit.module').then( m => m.AddresseditPageModule)
+  },
+  {
+    path: 'addresslist',
+    loadChildren: () => import('./addresslist/addresslist.module').then( m => m.AddresslistPageModule)
   }
 ];
 

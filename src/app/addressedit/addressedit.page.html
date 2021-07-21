@@ -1,0 +1,38 @@
+<ion-header [translucent]="true" class="bg1">
+  	<ion-toolbar class="fc1 bg1">
+	    <ion-grid class=" bg1">
+	    	<ion-row>
+	    		<ion-col size="1" routerLink="/" class="ion-align-self-center fs14 fb">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </ion-col>
+	    		<ion-col size="10">
+	    			<h1 class="fs10 fb marg0">Address Edit</h1>
+	    		</ion-col>
+	    	</ion-row>
+	    </ion-grid>
+  	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<form action="/action_page.php">
+					<label class="fs10 fb dis_blk marg_t10"> Name:</label><br>
+				  	<input type="text" id="username" placeholder="Name" class="log_inp"><br>
+				  	<label class="fs10 fb dis_blk marg_t10"> House No:</label><br>
+				  	<input type="text" id="username" placeholder="House No" class="log_inp"><br>
+				  	<label class="fs10 fb dis_blk marg_t10"> Landmark:</label><br>
+				  	<input type="password" id="pwd" class="log_inp" placeholder="Landmark"><br><br>
+				  	<label class="fs10 fb dis_blk marg_t10"> Area:</label><br>
+				  	<input type="text" id="pwd" class="log_inp" placeholder="Area"><br><br>
+				  	<label class="fs10 fb dis_blk marg_t10"> City:</label><br>
+				  	<input type="text" id="pwd" class="log_inp" placeholder="City"><br><br>
+				  	<label class="fs10 fb dis_blk marg_t10"> Pincode:</label><br>
+				  	<input type="text" id="pwd" class="log_inp" placeholder="Pincode"><br><br>
+				  	<input type="submit" value="UPDATE" class="log_btn">
+				</form>			
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

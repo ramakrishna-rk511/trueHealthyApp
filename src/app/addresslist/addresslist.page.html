@@ -1,0 +1,44 @@
+<ion-header [translucent]="true" class="bg1">
+  	<ion-toolbar class="fc1 bg1">
+	    <ion-grid class=" bg1">
+	    	<ion-row>
+	    		<ion-col size="1" routerLink="/" class="ion-align-self-center">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </ion-col>
+	    		<ion-col size="10">
+	    			<h1 class="fs10 fb marg0">Address List</h1>
+	    		</ion-col>
+	    	</ion-row>
+	    </ion-grid>
+  	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid>
+		<ion-row>
+			<ion-grid class="br_1 br_radius5 padd5">
+				<ion-row class="br_btm_1">
+					<ion-col size="12">
+						<p class="fs10 fb marg0 padd_b5">Ramakrishna</p>
+						<p class="fs10 marg0 padd_b5">1-12-145</p>
+						<p class="fs10 marg0 padd_b5">Ramalayam Road</p>
+						<p class="fs10 marg0 padd_b5">Kukatpally, Hyderabad, 504200</p>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col size="6" class="ion-text-center">
+						<button class="add_address">DELETE</button>
+					</ion-col>
+					<ion-col size="6" class="ion-text-center">
+						<button class="add_address">EDIT</button>
+					</ion-col>
+				</ion-row>
+				<ion-row class="single_proceed">
+					<ion-col size="12">
+						<button class="add_address">ADD ADDRESS</button>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-row>
+	</ion-grid>
+</ion-content>

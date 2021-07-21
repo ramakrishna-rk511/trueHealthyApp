@@ -1,0 +1,79 @@
+<ion-header class="br_btm_1">
+  	<ion-toolbar>
+	    <ion-grid>
+	    	<ion-row>
+	    		<ion-col size="1" routerLink="/" class="ion-align-self-center fs14 fb">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </ion-col>
+	    		<ion-col size="11">
+	    			<h1 class="fs10 fb marg0">Orders</h1>
+	    		</ion-col>
+	    	</ion-row>
+	    </ion-grid>
+  	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid>
+		<ion-row>
+			<ion-grid class="br_1 br_radius5">
+				<ion-row class="br_btm_1">
+					<ion-col size="8">
+						<h1 class="fs10 fb marg0">Order Code : <span class="fs10 fc2">OFGBSGD546ASD</span></h1>
+					</ion-col>
+					<ion-col size="4" class="ion-text-right">
+						<h1 class="fs10 fb marg0">250/-</h1>
+						
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col size="6">
+						<p class="fs10 fb marg0 padd_b5">Tamarind leaves green 200gm</p>
+						<p class="fs10 marg0 padd_b5">QTY : 2kg</p>
+						<p class="fs10 marg0">25-02-2021</p>
+					</ion-col>
+					<ion-col size="6" class="ion-text-right">
+						<p class="fs10 marg0">Kukatpally</p>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-row>
+	</ion-grid>
+
+
+	<ion-segment [(ngModel)]="selectedOrder">
+		<ion-segment-button value="openorders" >
+			<div>Open</div>
+		</ion-segment-button>
+		<ion-segment-button value="delivered">
+			<div>Delivered</div>
+		</ion-segment-button>
+		<ion-segment-button value="canceled">
+			<div>Canceled</div>
+		</ion-segment-button>
+	</ion-segment>
+	<div [ngSwitch]="selectedOrder">
+		<div *ngSwitchCase="'openorders'">
+			Open Orders
+		</div>
+	</div>
+	<div [ngSwitch]="selectedOrder">
+		<div *ngSwitchCase="'delivered'">
+			Deli Orders
+		</div>
+	</div>
+	<div [ngSwitch]="selectedOrder">
+		<div *ngSwitchCase="'canceled'">
+			canceled Orders
+		</div>
+	</div>
+
+
+	<!-- SUBSCRIPTION LIST -->
+
+	
+
+	
+
+
+</ion-content>
